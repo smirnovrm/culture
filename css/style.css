@@ -1,0 +1,461 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  /* display: flex; */
+  /* flex-direction: column; */
+
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+h1,h2,h3 {
+  margin: 0;
+
+  font-family: 'Playfair Display', serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+
+  margin:-1px;
+  padding: 0;
+  border: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0,0,0,0);
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.list-nav,
+.review-list,
+.ticket-list,
+.social {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.list-nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-header {
+  padding-top: 60px;
+  padding-bottom: 43px;
+}
+
+.page-header .heading {
+  font-size: 35px;
+  line-height: 47px;
+  font-weight: 900;
+  letter-spacing: 1px;
+
+  text-align: center;
+}
+
+.main-nav {
+  margin-top: 46px;
+}
+
+.page-header .list-nav,
+.page-footer .list-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-item {
+  display: flex;
+}
+
+.nav-link {
+  font-size: 15px;
+  letter-spacing: 2px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: #000000;
+
+  border-bottom: 2px solid transparent;
+
+  transition: all 0.5s;
+}
+
+.nav-item:nth-child(2) {
+  margin-left: 4px;
+}
+
+.nav-link:visited,
+.footer-nav .nav-link:visited {
+  color: #ff5a31;
+
+  border-bottom-color: #ff5a31;
+}
+
+.nav-link:hover,
+.footer-nav .nav-link:hover {
+  color: #ff7931;
+
+  border-bottom-color: #ff7931;
+}
+
+.nav-link:active,
+.footer-nav .nav-link:active {
+  color: #31ff64;
+
+  border-bottom-color: #31ff64;
+}
+
+.main-news {
+  padding-top: 47px;
+  padding-bottom: 50px;
+
+  background-image: url('../img/main_news_background.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.main-news-title {
+  margin-top: 32px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 84px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.main-news-link {
+  color: #ffffff;
+  text-decoration: none;
+
+  transition: color 0.5s;
+}
+
+.main-news-link:hover {
+  color: #ff7931;
+}
+
+.main-news-text {
+  max-width: 455px;
+
+  margin: 0;
+  margin-top: 136px;
+
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+
+  color: #ffffff;
+
+  align-self: center;
+}
+
+.review .wrapper {
+  padding-top: 43px;
+  padding-bottom: 53px;
+}
+
+.review-header,
+.ticket-header {
+  margin-bottom: 20px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+
+  letter-spacing: 2px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+.review-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin-left: 2px;
+}
+
+.review-item {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 370px;
+}
+
+.review-heading,
+.ticket-feature {
+  margin-top: 20px;
+
+  font-style: normal;
+  font-weight: 900;
+  font-size: 23px;
+  line-height: 31px;
+}
+
+.review-link {
+  text-decoration: none;
+
+  color: #000000;
+
+  transition: all 0.5s;
+}
+
+.page-header .logo-text {
+  font-size: 35px;
+  line-height: 47px;
+
+  color: #000000;
+}
+
+.review-link:visited {
+  color: #ff5a31;
+}
+
+.review-link:hover,
+.logo-text:hover {
+  color: #ff7931;
+}
+
+.review-link:active,
+.logo-text:active {
+  color: #31ff64;
+}
+
+.review-text {
+  margin: 0;
+  margin-top: 9px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.season-ticket {
+  min-height: 556px;
+
+  padding-top: 33px;
+  padding-bottom: 11px;
+
+  background-color: #f7f7f7;
+  background-image: url('../img/ellipse_background.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ticket-header {
+  margin-bottom: 35px;
+  margin-left: -7px;
+}
+
+.ticket-list {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.ticket-item {
+  position: relative;
+
+  max-width: 370px;
+
+  margin-bottom: 47px;
+
+  text-align: center;
+}
+
+.ticket-item:not(:last-of-type)::after {
+  content: ' ';
+  display: block;
+  position: absolute;
+
+  width: 100px;
+
+  opacity: 0.4;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+
+  bottom: -24px;
+  left: calc(50% - 50px);
+}
+
+.ticket-feature {
+  font-family: 'Playfair Display', serif;
+}
+
+.ticket-text {
+  margin: 0;
+  margin-top: 8px;
+
+  line-height: 21px;
+}
+
+.btn {
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.btn-ticket {
+  max-width: 170px;
+
+  margin-top: 1px;
+
+  padding-top: 17px;
+  padding-right: 63px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+
+  align-self: center;
+
+  background-color: #ff7931;
+  color: #ffffff;
+  background-image: url('../img/arrow.svg');
+  background-repeat: no-repeat;
+  background-position: right 33px center;
+
+  text-decoration: none;
+
+  transition: background-color 0.5s;
+}
+
+.btn-ticket:hover {
+  background-color: #161616;
+}
+
+.page-footer {
+  margin-top: 50px;
+  padding-top: 26px;
+  padding-bottom: 46px;
+
+  background-color: #575757;
+}
+
+.logo-text {
+  align-self: center;
+
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 37px;
+
+  letter-spacing: 1px;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  transition: color 1.0s;
+}
+
+.footer-nav {
+  margin-top: 32px;
+  margin-bottom: 88px;
+
+  position: relative;
+}
+
+.footer-nav::after {
+  content: ' ';
+  display: block;
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: -46px;
+
+  opacity: 0.2;
+  border: 1px solid #FFFFFF;
+
+}
+
+.footer-nav .nav-link  {
+  color: #ffffff;
+}
+
+.social {
+  display: flex;
+  align-self: center;
+
+}
+
+.social-item:not(:last-of-type) {
+  display: flex;
+  margin-right: 14px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 47px;
+  height: 47px;
+  background-color: #ffffff;
+
+  transition: background-color 0.5s;
+}
+
+.social-link svg {
+  fill: #575757;
+  transition: fill 1.5s;
+}
+
+.social-link:hover {
+  background-color: #161616;
+}
+
+.social-link:hover svg {
+  fill: #ffffff;
+}
