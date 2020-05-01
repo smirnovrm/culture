@@ -76,7 +76,7 @@ img {
 
 .page-header {
   padding-top: 60px;
-  padding-bottom: 43px;
+  padding-bottom: 45px;
 }
 
 .page-header .heading {
@@ -141,8 +141,8 @@ img {
 }
 
 .main-news {
-  padding-top: 47px;
-  padding-bottom: 50px;
+  padding-top: 46px;
+  padding-bottom: 45px;
 
   background-image: url('../img/main_news_background.jpg');
   background-repeat: no-repeat;
@@ -178,10 +178,10 @@ img {
   max-width: 455px;
 
   margin: 0;
-  margin-top: 136px;
+  margin-top: 133px;
 
   font-size: 14px;
-  line-height: 21px;
+  line-height: 23px;
   font-weight: normal;
   font-style: normal;
   text-align: center;
@@ -192,7 +192,7 @@ img {
 }
 
 .review .wrapper {
-  padding-top: 43px;
+  padding-top: 44px;
   padding-bottom: 53px;
 }
 
@@ -373,8 +373,8 @@ img {
 
 .page-footer {
   margin-top: 50px;
-  padding-top: 26px;
-  padding-bottom: 46px;
+  padding-top: 27px;
+  padding-bottom: 47px;
 
   background-color: #575757;
 }
@@ -399,7 +399,7 @@ img {
 
 .footer-nav {
   margin-top: 32px;
-  margin-bottom: 88px;
+  margin-bottom: 86px;
 
   position: relative;
 }
@@ -411,7 +411,7 @@ img {
 
   left: 0;
   right: 0;
-  bottom: -46px;
+  bottom: -45px;
 
   opacity: 0.2;
   border: 1px solid #FFFFFF;
