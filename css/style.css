@@ -1,3 +1,8 @@
+@font-face{
+	font-family: 'Raleway';
+	src: url('../fonts/raleway-regular.woff2') format('woff');
+}
+
 *,
 *::after,
 *::before {
@@ -141,13 +146,51 @@ img {
 }
 
 .main-news {
-  padding-top: 46px;
-  padding-bottom: 45px;
+  /* padding-top: 46px;
+  padding-bottom: 45px; */
 
   background-image: url('../img/main_news_background.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+
+.main-news .wrapper {
+  padding-top: 46px;
+  padding-bottom: 45px;
+
+  position: relative;
+}
+
+.main-news .wrapper::before {
+  content: 'Новое';
+  position: absolute;
+
+  display: flex;
+
+  max-width: 117px;
+  max-height: 25px;
+
+  padding-top: 3px;
+  padding-right: 27px;
+  padding-bottom: 5.19px;
+  padding-left: 25px;
+
+  top: 0;
+  left: 15px;
+
+  font-family: 'Raleway', Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: #ffffff;
+
+  background-color: #ff7931;
 }
 
 .main-news-title {
