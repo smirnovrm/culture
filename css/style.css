@@ -193,6 +193,10 @@ img {
   background-color: #ff7931;
 }
 
+.main-news-img {
+  align-self: center;
+}
+
 .main-news-title {
   margin-top: 32px;
 
@@ -366,6 +370,8 @@ img {
 
   bottom: -24px;
   left: calc(50% - 50px);
+
+  transform: rotate(0.1deg);
 }
 
 .ticket-feature {
