@@ -264,8 +264,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
-  margin-left: 2px;
 }
 
 .review-item {
@@ -273,6 +271,23 @@ img {
   flex-direction: column;
 
   max-width: 370px;
+}
+
+.review-img {
+  margin-left: 1px;
+}
+
+.review-item:first-child .review-img,
+.review-item:first-child .review-link {
+  margin-left: 2px;
+}
+
+.review-item:nth-of-type(3) .review-img {
+  margin: 0;
+}
+
+.review-item:nth-of-type(2) .review-text {
+  max-width: 358px;
 }
 
 .review-heading,
@@ -325,10 +340,8 @@ img {
 }
 
 .season-ticket {
-  min-height: 556px;
-
   padding-top: 33px;
-  padding-bottom: 11px;
+  padding-bottom: 37px;
 
   background-color: #f7f7f7;
   background-image: url('../img/ellipse_background.png');
@@ -365,7 +378,7 @@ img {
 
   width: 100px;
 
-  opacity: 0.4;
+  opacity: 0.2;
   border: 1px solid rgba(0, 0, 0, 0.2);
 
   bottom: -24px;
@@ -506,7 +519,13 @@ img {
   fill: #ffffff;
 }
 
-@media screen and (max-width: 850px){
+@media screen and (max-width: 1141px){
+  .review-item {
+    max-width: 275px;
+  }
+}
+
+@media screen and (max-width: 854px){
   .page-header .list-nav, .page-footer .list-nav {
     flex-direction: column;
     align-items: center;
@@ -522,6 +541,7 @@ img {
 
   .review-list {
     flex-direction: column;
+    align-items: center;
   }
 
   .review-item {
@@ -531,8 +551,16 @@ img {
     text-align: center;
   }
 
+  .review-img {
+    margin: 0;
+  }
+
   .review-text {
     max-width: 370px;
+  }
+
+  .season-ticket {
+    padding-top: 0;
   }
 
 }
