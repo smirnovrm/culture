@@ -519,6 +519,11 @@ img {
   fill: #ffffff;
 }
 
+.facebook-icon,
+.twitter-icon {
+  margin-left: -1px;
+}
+
 @media screen and (max-width: 1141px){
   .review-item {
     max-width: 275px;
